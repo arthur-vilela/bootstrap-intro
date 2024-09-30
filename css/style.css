@@ -9,9 +9,16 @@ body {}
         "wdth"100;
 }
 
-.alert-container {}
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
 
-.features-container {}
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+}
 
 .callout-container {
     height: 100vh;
@@ -37,21 +44,42 @@ body {}
     width: 100%;
     background-color: rgba(0, 0, 0, .4);
 }
-.quotes-container {}
-
-.monthly-container {}
 
 /* Block divider */
 
 .block-divider {
     width: 100px;
     background-color: beige;
-    /* align-self: baseline; */
-    /* align-content: normal; */
-    /* text-align: left; */
     border: 0;
     height: 3px;
     margin-left: 0;
+}
+
+/* Navbar */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border:0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
 }
 
 /* Jumbotron */
