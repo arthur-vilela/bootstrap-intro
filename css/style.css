@@ -15,13 +15,88 @@ body {}
 
 .callout-container {
     height: 100vh;
-    background: url("images/whiskey-background.jpg") no-repeat bottom right fixed;
+
+    background: url("../images/whiskey-background.jpg") no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
 }
 
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
 .quotes-container {}
 
 .monthly-container {}
+
+/* Block divider */
+
+.block-divider {
+    width: 100px;
+    background-color: beige;
+    /* align-self: baseline; */
+    /* align-content: normal; */
+    /* text-align: left; */
+    border: 0;
+    height: 3px;
+    margin-left: 0;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron-header {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.jumbotron .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 25px 0;
+    color: beige;
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #ececec;
+}
+
+/* Buttons */
+
+.btn--cta {
+    font-weight:400;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color:crimson;
+    border-color: crimson;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #b00f2d;
+    border-color: #b00f2d;
+}
