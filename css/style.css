@@ -1,5 +1,11 @@
 body {}
 
+.container-wrapper {}
+
+.container-wrapper--red {
+    background-color: #b00f2d;
+    color: white;
+}
 .noto-sans-body {
     font-family: "Noto Sans", system-ui;
     font-optical-sizing: auto;
@@ -45,6 +51,17 @@ body {}
     background-color: rgba(0, 0, 0, .4);
 }
 
+/* Page Headers */
+
+.page-header {
+    margin-bottom: 15px;
+    border-bottom: 0;
+    text-align: left;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
 /* Block divider */
 
 .block-divider {
@@ -53,6 +70,16 @@ body {}
     border: 0;
     height: 3px;
     margin-left: 0;
+}
+
+.block-divider--red {
+    background-color: #b00f2d;
+}
+/* Content container */
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 /* Navbar */
@@ -127,4 +154,24 @@ body {}
 .btn--red:active:focus {
     background-color: #b00f2d;
     border-color: #b00f2d;
+}
+
+.feature {
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #b00f2d;
 }
