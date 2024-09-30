@@ -13,9 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="noto-sans-body">
     <!--Nav-->
     <nav class="navbar navbar-light navbar-expand-sm bg-light">
         <a href="/" class="navbar-brand">
@@ -50,7 +51,7 @@
         </div>
         <!--</nav>-->
     </nav>
-    <article class="container mt-3">
+    <div class="container alert-container">
         <div class="row d-none d-sm-block">
             <div class="col-12">
                 <div class="alert alert-warning">
@@ -76,8 +77,9 @@
             </div>
         </div>
         <!-- /.callout -->
-        <hr>
-        <!-- Quotes -->
+    </div>
+    <!-- Quotes -->
+    <div class="container quotes-container">
         <section class="quotes">
             <div class="row">
                 <div class="col-12 my-5">
@@ -118,8 +120,10 @@
             </div>
         </section>
         <!-- /.quotes -->
-        <hr>
-        <!-- Features -->
+    </div>
+
+    <!-- Features -->
+    <div class="container features-container">
         <section class="features">
             <div class="row">
                 <div class="col-12 my-5">
@@ -159,9 +163,10 @@
             </div>
         </section>
         <!-- /.features -->
-        <hr>
+    </div>
 
-        <!-- Monthly Favorites -->
+    <!-- Monthly Favorites -->
+    <div class="container monthly-container">
         <section class="favorites">
             <table class="table table-hover">
                 <thead class="thead-dark">
@@ -198,8 +203,9 @@
                 </tbody>
             </table>
         </section>
-        <!-- /.Monthly Favorites -->
-    </article>
+    </div>
+    <!-- /.Monthly Favorites -->
+
 
     <div class="modal" tabindex="-1" role="dialog" id="signUpModal">
         <div class="modal-dialog" role="document">
@@ -216,7 +222,8 @@
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                anyone
                                 else.</small>
                         </div>
                         <div class="form-group">
